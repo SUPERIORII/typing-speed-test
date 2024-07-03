@@ -1,0 +1,128 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(17, 4, 194, 0.2);
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin-inline: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 40px;
+    padding: 1rem 4rem 4rem;
+    height: 60%;
+    border-radius: 20px;
+}
+
+
+.typing-game-title {
+    text-align: center;
+    font-size: 30px;
+    font-family: "poppins", sans-serif;
+    font-style: italic;
+}
+
+.wrapper {
+    border: 2px solid gray;
+    padding: 1rem;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.random-paragraph {
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.update-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 18px;
+    padding: .9rem;
+    font-family: 'poppins', sans-serif;
+    margin-top: 25px;
+}
+
+.update-wrapper div {
+    margin-right: 20px;
+    padding-left: .9rem;
+    padding-right: .9rem;
+}
+
+.update-wrapper span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+span.active {
+    position: relative;
+}
+
+span.active:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: green;
+    height: 2px;
+    animation: blink 1s ease-in-out infinite;
+    opacity: 0;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 1;
+    }
+}
+
+span.wrong {
+    outline: 1px solid white;
+    background: #ffc0cb;
+}
+
+
+.btn {
+    padding: .4rem;
+    background: rgb(9, 9, 211);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.input {
+    width: 900px;
+    height: 200px;
+    background: none;
+    border-color: gray;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: .4rem;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
