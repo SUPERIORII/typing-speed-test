@@ -8,7 +8,7 @@ let mistake= document.querySelector('.mistake');
 let wordPerMinutes= document.querySelector('.wpm');
 let characterPerMinutes= document.querySelector('.cpm');
 
-
+inputField.style.opacity = '0'
 let letterIndex =0
 let  mistakeNum = 0;
 let duration = 60
@@ -73,7 +73,7 @@ inputField.addEventListener('input', ()=>{
         letterIndex++
     }
   letterCharacter.forEach(character => character.classList.remove('active'))
-  letter.classList.add('active');
+  letter.classList.add('active'); 
 
   mistake.textContent = mistakeNum;
   characterPerMinutes.textContent = letterIndex - mistakeNum + 'P/M'
